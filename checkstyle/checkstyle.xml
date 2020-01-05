@@ -11,8 +11,14 @@
 <module name="Checker">
   <property name="severity" value="warning"/>
   <property name="charset" value="UTF-8"/>
+  <!-- moved module LineLength, see https://checkstyle.org/releasenotes.html#Release_8.24 -->
+  <module name="LineLength">
+      <property name="severity" value="info"/>
+      <property name="ignorePattern" value="^.*@see.*$"/>
+      <property name="max" value="128"/>
+  </module>
   <module name="TreeWalker">
-    <module name="FileContentsHolder"/>
+    <!-- deleted <module name="FileContentsHolder"/>, see https://checkstyle.org/releasenotes.html#Release_8.2 -->
     <module name="ConstantName"/>
     <module name="LocalFinalVariableName"/>
     <module name="LocalVariableName"/>
@@ -26,11 +32,7 @@
     <module name="IllegalImport"/>
     <module name="RedundantImport"/>
     <module name="UnusedImports"/>
-    <module name="LineLength">
-      <property name="severity" value="info"/>
-      <property name="ignorePattern" value="^.*@see.*$"/>
-      <property name="max" value="128"/>
-    </module>
+    
     <module name="MethodLength">
       <property name="max" value="250"/>
       <property name="countEmpty" value="false"/>
@@ -124,6 +126,10 @@
       <property name="format" value="System.exit"/>
       <property name="message" value="Only exit from main methods (inside main() use SuppressionCommentFilter)"/>
     </module>
+    <!-- moved SuppressionCommentFilter here, see https://checkstyle.org/releasenotes.html#Release_8.1 -->
+    <module name="SuppressionCommentFilter">
+      <property name="offCommentFormat" value="CHECKSTYLE\:OFF \([a-zA-Z].*\)"/>
+    </module>
   </module>
   <module name="FileLength"/>
   <module name="FileTabCharacter"/>
@@ -135,7 +141,4 @@
     <property name="lineSeparator" value="lf"/>
   </module>
   <module name="Translation"/>
-  <module name="SuppressionCommentFilter">
-    <property name="offCommentFormat" value="CHECKSTYLE\:OFF \([a-zA-Z].*\)"/>
-  </module>
 </module>
