@@ -1,0 +1,7 @@
+path=cobigen
+workingsets=cobigen
+git.url=https://github.com/devonfw/cobigen.git
+git.branch=develop
+build.command=build -DskipTests=true -Darchetype.test.skip=true clean install
+eclipse=import
+active=false
