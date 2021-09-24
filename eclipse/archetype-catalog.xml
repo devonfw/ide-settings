@@ -6,7 +6,7 @@
     <archetype>
       <groupId>com.devonfw.java.templates</groupId>
       <artifactId>devon4j-template-server</artifactId>
-      <version>3.2.0</version>
+      <version>2021.04.003</version>
       <repository></repository>
     </archetype>
   </archetypes>

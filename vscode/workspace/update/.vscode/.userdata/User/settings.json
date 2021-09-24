@@ -1,0 +1,9 @@
+{
+  "redhat.telemetry.enabled": false,
+  "telemetry.enableCrashReporter": false,
+  "gitlens.advanced.telemetry.enabled": false,
+  "telemetry.enableTelemetry": false,
+  "code-runner.enableAppInsights": false,
+  "rest-client.enableTelemetry": false,
+  "githubPullRequests.telemetry.enabled": false
+}
