@@ -7,6 +7,6 @@ eclipse.m2.userSettingsFile=${DEVON_IDE_HOME}/conf/.m2/settings.xml
 eclipse.m2.WorkspacelifecycleMappingsLocation=${SETTINGS_PATH}/eclipse/lifecycle-mapping-metadata.xml
 eclipse.preferences.version=1
 eclipse.m2.runtimes=maven
-eclipse.m2.runtimesNodes/maven/location=${DEVON_IDE_HOME}/software/maven
+eclipse.m2.runtimesNodes/maven/location=${DEVON_IDE_HOME}/software/mvn
 eclipse.m2.runtimesNodes/maven/type=EXTERNAL
 eclipse.m2.defaultRuntime=maven
