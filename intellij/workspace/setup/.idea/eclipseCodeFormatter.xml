@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EclipseCodeFormatterProjectSettings">
+    <option name="projectSpecificProfile">
+      <ProjectSpecificProfile>
+        <option name="eclipseVersion" value="CUSTOM" />
+        <option name="formatter" value="ECLIPSE" />
+        <option name="pathToConfigFileJava" value="${DEVON_IDE_HOME}/settings/eclipse/devonfw-code-style.xml" />
+        <option name="selectedJavaProfile" value="devonfw" />
+      </ProjectSpecificProfile>
+    </option>
+  </component>
+</project>

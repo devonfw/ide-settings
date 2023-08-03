@@ -1,0 +1,5 @@
+<application>
+  <component name="EclipseCodeFormatterSettings">
+    <option name="pathToEclipse" value="${DEVON_IDE_HOME}/software/eclipse" />
+  </component>
+</application>
