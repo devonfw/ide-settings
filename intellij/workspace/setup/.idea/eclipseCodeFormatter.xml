@@ -5,8 +5,8 @@
       <ProjectSpecificProfile>
         <option name="eclipseVersion" value="CUSTOM" />
         <option name="formatter" value="ECLIPSE" />
-        <option name="pathToConfigFileJava" value="${DEVON_IDE_HOME}/settings/eclipse/devonfw-code-style.xml" />
-        <option name="selectedJavaProfile" value="devonfw" />
+        <option name="pathToConfigFileJava" value="${DEVON_IDE_HOME}/settings/eclipse/ide-code-style.xml" />
+        <option name="selectedJavaProfile" value="IDE" />
       </ProjectSpecificProfile>
     </option>
   </component>
