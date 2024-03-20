@@ -21,6 +21,7 @@
     </option>
   </component>
   <component name="MavenRunner">
+    <option name="jreName" value="Java" />
     <option name="skipTests" value="true" />
     <option name="vmOptions" value="-Xmx8G" />
   </component>
