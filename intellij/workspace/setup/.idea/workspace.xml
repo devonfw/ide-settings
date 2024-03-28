@@ -15,8 +15,8 @@
         <option name="mavenHome" value="${DEVON_IDE_HOME}/software/mvn" />
         <option name="threads" value="7" />
         <option name="useMavenConfig" value="true" />
-        <option name="userSettingsFile" value="${DEVON_IDE_HOME}\conf\.m2\settings.xml" />
-        <option name="localRepository" value="${DEVON_IDE_HOME}\conf\.m2\repository" />
+        <option name="userSettingsFile" value="${DEVON_IDE_HOME}/conf/.m2/settings.xml" />
+        <option name="localRepository" value="${DEVON_IDE_HOME}/conf/.m2/repository" />
       </MavenGeneralSettings>
     </option>
   </component>
