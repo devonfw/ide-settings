@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <module name="mailarchive-backend" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.kn.mailarchive.Application" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/mailarchive/backend" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
