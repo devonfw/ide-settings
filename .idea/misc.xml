@@ -3,4 +3,9 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="Java" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <shortenClasspath name="NONE" />
+    </configuration>
+  </component>
 </project>
