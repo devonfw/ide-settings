@@ -3,11 +3,5 @@
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <archetypes>
-    <archetype>
-      <groupId>com.devonfw.java.templates</groupId>
-      <artifactId>devon4j-template-server</artifactId>
-      <version>2023.01.001</version>
-      <repository></repository>
-    </archetype>
   </archetypes>
 </archetype-catalog>

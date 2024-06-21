@@ -1,3 +1,3 @@
 {
-  "java.home":"${DEVON_IDE_HOME}/software/java"
+  "java.home":"$[IDE_HOME]/software/java"
 }

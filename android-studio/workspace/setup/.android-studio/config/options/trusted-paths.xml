@@ -2,7 +2,7 @@
   <component name="Trusted.Paths">
     <option name="TRUSTED_PROJECT_PATHS">
       <map>
-        <entry key="${WORKSPACE_PATH}" value="true" />
+        <entry key="$[WORKSPACE_PATH]" value="true" />
       </map>
     </option>
   </component>

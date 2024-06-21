@@ -4,7 +4,7 @@
     <option name="projectSpecificProfile">
       <ProjectSpecificProfile>
         <option name="eclipseVersion" value="CUSTOM" />
-        <option name="pathToConfigFileJava" value="${DEVON_IDE_HOME}/settings/eclipse/ide-code-style.xml" />
+        <option name="pathToConfigFileJava" value="$[IDE_HOME]/settings/eclipse/ide-code-style.xml" />
         <option name="selectedJavaProfile" value="IDE" />
       </ProjectSpecificProfile>
     </option>
