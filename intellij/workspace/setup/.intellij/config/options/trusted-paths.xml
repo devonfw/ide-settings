@@ -9,7 +9,7 @@
   <component name="Trusted.Paths.Settings">
     <option name="TRUSTED_PATHS">
       <list>
-		<option value="${WORKSPACE_PATH}"/>
+		<option value="$[WORKSPACE_PATH]"/>
       </list>
     </option>
   </component>
