@@ -17,7 +17,6 @@
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="$[IDE_HOME]/conf/mvn/settings.xml" />
         <option name="localRepository" value="$[IDE_HOME]/conf/mvn/repository" />
-        <option name="localRepository" value="${DEVON_IDE_HOME}/conf/.m2/repository" />
       </MavenGeneralSettings>
     </option>
   </component>
