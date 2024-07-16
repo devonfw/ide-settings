@@ -2,8 +2,15 @@
   <component name="Trusted.Paths">
     <option name="TRUSTED_PROJECT_PATHS">
       <map>
-        <entry key="${WORKSPACE_PATH}" value="true" />
+        <entry key="$[WORKSPACE_PATH]" value="true" />
       </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+		<option value="$[WORKSPACE_PATH]"/>
+      </list>
     </option>
   </component>
 </application>

@@ -8,5 +8,5 @@ printMargin=true
 spacesForTabs=true
 tabWidth=2
 eclipse.preferences.version=1
-printMarginColumn=120
+printMarginColumn=160
 overviewRuler_migration=migrated_3.1

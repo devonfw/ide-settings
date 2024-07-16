@@ -1,6 +1,13 @@
 = ide-settings
 
-Repository for the https://github.com/devonfw/ide/blob/master/documentation/settings.asciidoc#settings[settings] of the https://devonfw.com/website/pages/docs/devonfw-ide.asciidoc.html[devonfw-ide].
+Repository for the https://github.com/devonfw/IDEasy/blob/main/documentation/settings.adoc#settings[settings] of the https://devonfw.com/devonfw/IDEasy[IDEasy].
 Simply fork this repository for your projects and start customizing the configuration to your needs.
-Please report issues https://github.com/devonfw/ide/issues[here] as we have closed issues in this repository itself.
+Please report issues https://github.com/devonfw/IDEasy/issues[here] as we have closed issues in this repository itself.
 You may still provide PRs with proposed changes.
+
+== devonfw-ide
+
+This repository is also used by https://github.com/devonfw/ide[devonfw-ide].
+However, this uses the `devonfw-ide` branch of this repository by default.
+Please note that `IDEasy` is the successor of `devonfw-ide`.
+From 2025 on projects should switch to the new product `IDEasy` that has many advantages.
