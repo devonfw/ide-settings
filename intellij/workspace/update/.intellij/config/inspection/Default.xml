@@ -1,4 +1,5 @@
 <profile version="1.0">
   <option name="myName" value="Default" />
   <inspection_tool class="MissingJavadoc" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="MissingOverrideAnnotation" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES"/>
 </profile>
