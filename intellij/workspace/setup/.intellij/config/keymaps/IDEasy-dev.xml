@@ -1,6 +1,0 @@
-<keymap version="1" name="IDEasy-dev" parent="$default">
-  <action id="Macro.reformat-optimize-imports">
-    <keyboard-shortcut first-keystroke="shift ctrl s" />
-  </action>
-  <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleStrikethroughAction" />
-</keymap>
