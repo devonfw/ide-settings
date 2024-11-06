@@ -1,13 +1,14 @@
-<application>
-  <component name="ProjectJdkTable">
-    <jdk version="2">
-      <name value="Java" />
-      <type value="JavaSDK" />
-      <version value="OpenJDK $[JAVA_VERSION]" />
-      <homePath value="$[IDE_HOME]/software/java" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="OVERRIDE">
+  <component name="ProjectJdkTable" merge:id="@name">
+    <jdk version="2" merge:id="@version">
+      <name value="Java" merge:id="@value"/>
+      <type value="JavaSDK" merge:id="@value"/>
+      <version value="OpenJDK $[JAVA_VERSION]" merge:id="@value"/>
+      <homePath value="$[IDE_HOME]/software/java" merge:id="@value"/>
       <roots>
         <annotationsPath>
-          <root type="composite">
+          <root type="composite" merge:id="@type">
             <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/resources/jdkAnnotations.jar!/" type="simple" />
           </root>
         </annotationsPath>

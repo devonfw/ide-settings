@@ -1,5 +1,6 @@
-<application>
-  <component name="EclipseCodeFormatterSettings">
-    <option name="pathToEclipse" value="$[IDE_HOME]/software/eclipse" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
+  <component name="EclipseCodeFormatterSettings" merge:id="@name">
+    <option name="pathToEclipse" value="$[IDE_HOME]/software/eclipse" merge:id="@name"/>
   </component>
 </application>
