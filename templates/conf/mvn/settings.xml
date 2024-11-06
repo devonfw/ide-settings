@@ -17,13 +17,13 @@
    hit return and then type your password (do not supply as argument as otherwise it will be saved to the history of your shell)
    Then copy the encrypted password as according password to this settings.xml
    -->
-  <servers>
-    <server>
-      <id>repository</id>
-      <username>$[mavenRepoLogin]</username>
-      <password>$[mavenRepoPassword]</password>
-    </server>
-  </servers>
+<servers>
+   <server>
+     <id>repository</id>
+     <username>${env.USERNAME}</username>
+     <password>$[mavenRepoPassword]</password>
+   </server>
+ </servers>
 
   <!--
   <mirrors>
