@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="OVERRIDE">
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="override">
   <component name="ProjectJdkTable" merge:id="@name">
     <jdk version="2" merge:id="@version">
       <name value="Java" merge:id="@value"/>
