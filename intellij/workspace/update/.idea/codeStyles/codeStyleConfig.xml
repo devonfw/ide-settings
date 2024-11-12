@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <component name="ProjectCodeStyleConfiguration" xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
-  <state merge:id="name">
+  <state merge:id="name()">
     <option name="PREFERRED_PROJECT_CODE_STYLE" value="Project" merge:id="@name" />
   </state>
 </component>
