@@ -3,8 +3,8 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" merge:id="@name" />
   <component name="MavenProjectsManager" merge:id="@name">
     <option name="originalFiles" merge:id="@name">
-      <list merge:id="name">
-        <option value="$PROJECT_DIR$/IDEasy/pom.xml" />
+      <list merge:id="name()">
+        <option value="$PROJECT_DIR$/IDEasy/pom.xml" merge:id="@value" />
       </list>
     </option>
   </component>

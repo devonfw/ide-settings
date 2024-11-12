@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <component name="ProjectCodeStyleConfiguration" xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
   <code_scheme name="Project" version="173"  merge:id="@name">
-    <JavaCodeStyleSettings merge:id="name">
+    <JavaCodeStyleSettings merge:id="name()">
       <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" merge:id="@name" />
       <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999"/>
     </JavaCodeStyleSettings>

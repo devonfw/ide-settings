@@ -11,8 +11,8 @@
   </component>
   <component name="MavenImportPreferences" merge:id="@name">
     <option name="generalSettings" merge:id="@name">
-      <MavenGeneralSettings  merge:id="name">
-        <option name="mavenHome" value="$[IDE_HOME]/software/mvn" />
+      <MavenGeneralSettings  merge:id="name()">
+        <option name="mavenHome" value="$[IDE_HOME]/software/mvn" merge:id="@name" />
         <option name="threads" value="7" />
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="$[IDE_HOME]/conf/mvn/settings.xml" />
