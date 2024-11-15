@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine">
   <component name="PathMacrosImpl" merge:id="@name">
-    <macro merge:id="@name" name="MAVEN_REPOSITORY" value="${M2_REPO}" />
+    <macro name="MAVEN_REPOSITORY" value="${M2_REPO}" merge:id="@name" />
   </component>
 </application>
