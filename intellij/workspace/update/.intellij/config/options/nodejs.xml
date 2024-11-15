@@ -2,6 +2,6 @@
 <application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine">
   <component name="NodeJsLocalInterpreterManager" merge:id="@name">
     <!-- ATTENTION: Will only work on windows so far -->
-    <local-interpreter merge:id="@path" path="$[IDE_HOME]/software/node/node.exe"/>
+    <local-interpreter path="$[IDE_HOME]/software/node/node.exe" merge:id="@path"/>
   </component>
 </application>

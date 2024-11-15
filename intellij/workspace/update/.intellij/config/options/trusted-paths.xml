@@ -10,7 +10,7 @@
   <component name="Trusted.Paths.Settings" merge:id="@name">
     <option name="TRUSTED_PATHS" merge:id="@name">
       <list merge:id="name()">
-		<option value="$[WORKSPACE_PATH]" merge:id="@value" />
+        <option value="$[WORKSPACE_PATH]" merge:id="@value" />
       </list>
     </option>
   </component>
