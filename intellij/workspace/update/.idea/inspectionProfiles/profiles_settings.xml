@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<component name="InspectionProjectProfileManager" xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="override" version="4">
-  <settings  merge:id="name()">
-    <option name="PROJECT_PROFILE" value="Default"  merge:id="@name" />
-    <option name="USE_PROJECT_PROFILE" value="false" />
-    <version value="1.0"  merge:id="@value" />
-  </settings>
-</component>
