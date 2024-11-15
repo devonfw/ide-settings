@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="override" version="4">
+<project xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
   <component name="AutoImportSettings" merge:id="@name">
     <option name="autoReloadType" value="SELECTIVE" merge:id="@name" />
   </component>
@@ -10,7 +10,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" merge:id="@name" />
   </component>
   <component name="MavenImportPreferences" merge:id="@name">
-    <option name="generalSettings" merge:id="@name">
+    <option name="generalSettings" merge:id="@name" merge:strategy="override">
       <MavenGeneralSettings  merge:id="name()">
         <option name="mavenHome" value="$[IDE_HOME]/software/mvn" merge:id="@name" />
         <option name="threads" value="7" />

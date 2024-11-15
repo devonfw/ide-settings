@@ -3,7 +3,7 @@
   <component name="MavenProjectSettings" merge:id="@name">
     <option name="testRunningSettings" merge:id="@name">
       <MavenTestRunningSettings  merge:id="name()">
-        <option name="passArgLine" value="false" merge:id="@name" />
+        <option name="passArgLine" value="true" merge:id="@name" />
       </MavenTestRunningSettings>
     </option>
   </component>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
-  <component name="KeymapManager" merge:id="@name">
-    <active_keymap name="IDEasy-dev" merge:id="@name" />
-  </component>
-</application>
