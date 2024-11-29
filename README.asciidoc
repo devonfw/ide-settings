@@ -1,6 +1,6 @@
 = ide-settings
 
-Repository for the https://github.com/devonfw/IDEasy/blob/main/documentation/settings.adoc#settings[settings] of the https://devonfw.com/devonfw/IDEasy[IDEasy].
+Repository for the https://github.com/devonfw/IDEasy/blob/main/documentation/settings.adoc#settings[settings] of the https://github.com/devonfw/IDEasy[IDEasy].
 Simply fork this repository for your projects and start customizing the configuration to your needs.
 Please report issues https://github.com/devonfw/IDEasy/issues[here] as we have closed issues in this repository itself.
 You may still provide PRs with proposed changes.

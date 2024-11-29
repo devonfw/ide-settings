@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
+  <component name="AutoImportSettings" merge:id="@name">
+    <option name="autoReloadType" value="SELECTIVE" merge:id="@name" />
+  </component>
+  <component name="FormatOnSaveOptions" merge:id="@name">
+    <option name="myRunOnSave" value="true" merge:id="@name" />
+  </component>
+  <component name="Git.Settings" merge:id="@name">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" merge:id="@name" />
+  </component>
+  <component name="MavenImportPreferences" merge:id="@name">
+    <option name="generalSettings" merge:id="@name" merge:strategy="override">
+      <MavenGeneralSettings  merge:id="name()">
+        <option name="mavenHome" value="$[IDE_HOME]/software/mvn" merge:id="@name" />
+        <option name="threads" value="7" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="$[IDE_HOME]/conf/mvn/settings.xml" />
+        <option name="localRepository" value="$[IDE_HOME]/conf/mvn/repository" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner" merge:id="@name">
+    <option name="jreName" value="Java" />
+    <option name="skipTests" value="true" />
+    <option name="vmOptions" value="-Xmx8G" />
+  </component>
+  <component name="OptimizeOnSaveOptions" merge:id="@name">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="RunManager" merge:id="@name">
+    <configuration default="true" type="JUnit" factoryName="JUnit" merge:id="name">
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" merge:id="@name" />
+</project>
