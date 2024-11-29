@@ -1,0 +1,9 @@
+{
+  "models": [
+    {
+      "title": "My vLLM OpenAI-compatible server",
+      "apiBase": "http://localhost:8000/v1"
+    }
+  ],
+  "allowAnonymousTelemetry": false
+}
