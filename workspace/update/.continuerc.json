@@ -1,0 +1,9 @@
+{
+  "models": [
+    {
+      "title": "My vLLM OpenAI-compatible server",
+      "apiBase": "$[continue.url]"
+    }
+  ],
+  "allowAnonymousTelemetry": false
+}
