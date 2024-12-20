@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
   <!-- The "localRepository" has to be set to ensure consistent behaviour across command-line and Eclipse.
-    To change it edit conf/devon.properties -->
+    To change it edit conf/ide.properties -->
   <localRepository>${env.M2_REPO}</localRepository>
 
   <!-- 
@@ -17,13 +17,13 @@
    hit return and then type your password (do not supply as argument as otherwise it will be saved to the history of your shell)
    Then copy the encrypted password as according password to this settings.xml
    -->
-  <servers>
-    <server>
-      <id>repository</id>
-      <username>$[mavenRepoLogin]</username>
-      <password>$[mavenRepoPassword]</password>
-    </server>
-  </servers>
+<servers>
+   <server>
+     <id>repository</id>
+     <username>${env.USERNAME}</username>
+     <password>$[mavenRepoPassword]</password>
+   </server>
+ </servers>
 
   <!--
   <mirrors>

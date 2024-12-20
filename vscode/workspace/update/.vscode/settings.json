@@ -1,3 +1,4 @@
 {
-  "java.home":"$[IDE_HOME]/software/java"
+  "java.home":"$[IDE_HOME]/software/java",
+  "update.mode": "none"
 }
