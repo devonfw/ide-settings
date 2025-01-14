@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="override" version="4">
-  <component name="Trusted.Paths" merge:id="@name">
-    <option name="TRUSTED_PROJECT_PATHS" merge:id="@name">
-      <map merge:id="name()">
-        <entry key="$[WORKSPACE_PATH]" value="true" merge:id="@key" />
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" version="4">
+  <component name="Trusted.Paths" >
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$[WORKSPACE_PATH]" value="true" merge:id="@key"/>
       </map>
     </option>
   </component>
-  <component name="Trusted.Paths.Settings" merge:id="@name">
-    <option name="TRUSTED_PATHS" merge:id="@name">
-      <list merge:id="name()">
-        <option value="$[WORKSPACE_PATH]" merge:id="@value" />
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$[WORKSPACE_PATH]" merge:id="@value"/>
       </list>
     </option>
   </component>

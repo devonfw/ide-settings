@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
-  <component name="CodeStyleSchemeSettings" merge:id="@name">
-    <option name="CURRENT_SCHEME_NAME" value="Default" merge:id="@name" />
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" version="4">
+  <component name="CodeStyleSchemeSettings">
+    <option name="CURRENT_SCHEME_NAME" value="Default"/>
   </component>
 </application>

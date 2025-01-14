@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<profile version="1.0" xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="COMBINE">
-  <option name="myName" value="Default" merge:id="@name"/>
+<profile version="1.0" xmlns:merge="https://github.com/devonfw/IDEasy/merge">
+  <option name="myName" value="Default"/>
   <inspection_tool class="AmbiguousFieldAccess" enabled="true" enabled_by_default="true" level="WARNING" merge:id="@class"/>
   <inspection_tool class="MissingJavadoc" enabled="true" enabled_by_default="true" level="WARNING"/>
   <inspection_tool class="MissingOverrideAnnotation" editorAttributes="WARNING_ATTRIBUTES" enabled="true" enabled_by_default="true" level="WARNING"/>
