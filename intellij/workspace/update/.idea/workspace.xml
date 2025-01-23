@@ -13,7 +13,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$[IDE_HOME]/software/mvn"/>
-        <option name="threads" value="7"/>
+        <option name="threads" value="1C"/>
         <option name="useMavenConfig" value="true"/>
         <option name="userSettingsFile" value="$[IDE_HOME]/conf/mvn/settings.xml"/>
         <option name="localRepository" value="$[IDE_HOME]/conf/mvn/repository"/>
