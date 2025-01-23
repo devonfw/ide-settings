@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" merge:id="@name" />
+<project version="4" xmlns:merge="https://github.com/devonfw/IDEasy/merge">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8"/>
 </project>

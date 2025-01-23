@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine" version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="Java" project-jdk-type="JavaSDK" merge:id="@name" />
+<project version="4" xmlns:merge="https://github.com/devonfw/IDEasy/merge">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="Java" project-jdk-type="JavaSDK"/>
 </project>
