@@ -28,6 +28,12 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true"/>
   </component>
+  <!-- https://github.com/devonfw/IDEasy/issues/981 - we cannot merge JSON in CDATA of XML therefore we use merge:strategy keep here -->
+  <component name="PropertiesComponent" merge:strategy="keep"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JUnit" factoryName="JUnit" merge:id="name()">
       <shortenClasspath name="ARGS_FILE"/>
