@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
+<project version="4" xmlns:merge="https://github.com/devonfw/IDEasy/merge">
   <component name="MavenProjectSettings">
     <option name="testRunningSettings">
       <MavenTestRunningSettings>
-        <option name="passArgLine" value="false" />
+        <option name="passArgLine" value="true"/>
       </MavenTestRunningSettings>
     </option>
   </component>

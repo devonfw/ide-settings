@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:merge="https://github.com/devonfw/IDEasy/merge" version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE"/>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true"/>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$"/>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$[IDE_HOME]/software/mvn"/>
+        <option name="threads" value="1C"/>
+        <option name="useMavenConfig" value="true"/>
+        <option name="userSettingsFile" value="$[IDE_HOME]/conf/mvn/settings.xml"/>
+        <option name="localRepository" value="$[IDE_HOME]/conf/mvn/repository"/>
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="Java"/>
+    <option name="skipTests" value="true"/>
+    <option name="vmOptions" value="-Xmx8G"/>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true"/>
+  </component>
+  <!-- https://github.com/devonfw/IDEasy/issues/981 - we cannot merge JSON in CDATA of XML therefore we use merge:strategy keep here -->
+  <component name="PropertiesComponent" merge:strategy="keep"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit" merge:id="configuration[@default='true' and @type='JUnit']">
+      <shortenClasspath name="ARGS_FILE" merge:id="name()"/>
+      <option name="METHOD_NAME" value=""/>
+      <option name="TEST_OBJECT" value="class"/>
+      <method v="2" merge:id="@v">
+        <option name="Make" enabled="true"/>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true"/>
+</project>
