@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><application>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><application xmlns:merge="https://github.com/devonfw/IDEasy/merge">
   <component name="CodeStyleSchemeSettings">
     <option name="CURRENT_SCHEME_NAME" value="ide"/>
   </component>

@@ -1,6 +1,6 @@
-<application>
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge">
   <component name="ProjectJdkTable">
-    <jdk version="2">
+    <jdk version="2" merge:id="jdk/name[@value='Java']/.." merge:strategy="override">
       <name value="Java"/>
       <type value="JavaSDK"/>
       <version value="OpenJDK"/>
