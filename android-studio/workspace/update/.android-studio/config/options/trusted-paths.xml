@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" version="4">
+  <component name="Trusted.Paths" >
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$[WORKSPACE_PATH]" value="true" merge:id="@key"/>
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$[WORKSPACE_PATH]" merge:id="@value"/>
+      </list>
+    </option>
+  </component>
+</application>
