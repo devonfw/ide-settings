@@ -1,5 +1,5 @@
 <project version="4" xmlns:merge="https://github.com/devonfw/IDEasy/merge">
-<component merge:id="@name" name="MavenProjectsManager">
+<component name="MavenProjectsManager">
 <option name="originalFiles">
 <list>
 <option value="$PROJECT_DIR$/$[PROJECT_PATH]/pom.xml"/>
