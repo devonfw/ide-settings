@@ -1,4 +1,16 @@
 {
   "java.jdt.ls.java.home":"$[IDE_HOME]/software/java",
-  "update.mode": "none"
+  "update.mode": "none",
+  "search.exclude": {
+    "**/.idea": true,
+    "**/.metadata": true
+  },
+  "files.exclude": {
+    "**/.idea": true,
+    "**/.metadata": true
+  },
+  "files.watcherExclude": {
+    "**/.idea/**": true,
+    "**/.metadata/**": true
+  }
 }
