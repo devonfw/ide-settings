@@ -6,5 +6,6 @@
   "code-runner.enableAppInsights": false,
   "rest-client.enableTelemetry": false,
   "githubPullRequests.telemetry.enabled": false,
-  "update.mode": "none"
+  "update.mode": "none",
+  "github-authentication.preferDeviceCodeFlow": true
 }
