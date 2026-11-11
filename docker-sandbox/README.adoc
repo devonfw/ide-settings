@@ -1,0 +1,68 @@
+= Docker Sandbox for AI Coding Agents
+
+[WARNING]
+====
+*This solution is experimental and targets technically skilled users only.
+Use at your own risk. No warranty or support is implied.*
+====
+
+Run an AI coding agent (default: *Claude Code*) inside an isolated container that
+contains an **automatically provisioned IDEasy workspace**, so the agent can
+safely perform development tasks, run tests and prepare commits/PRs **without
+affecting the host IDEasy installation**.
+
+Full documentation (how it works, security model, options, troubleshooting):
+link:https://github.com/devonfw/IDEasy/blob/main/documentation/docker-sandbox.adoc[IDEasy: docker-sandbox.adoc].
+
+== Contents
+
+|===
+|File |Purpose
+|`Dockerfile` |Provisions the IDEasy workspace (IDEasy + agent) into the image.
+|`docker-sandbox.sh` |Host launcher: builds the image, passes your Git identity, mounts your
+repository and starts the agent.
+|`entrypoint.sh` |Activates the IDEasy environment and runs the agent.
+|===
+
+== Quick start
+
+Run the launcher from inside the repository you want to work on:
+
+[source,bash]
+----
+bash docker-sandbox/docker-sandbox.sh
+----
+
+or via the IDEasy commandlet (which forwards all arguments to the launcher):
+
+[source,bash]
+----
+ide docker-sandbox
+----
+
+This starts *Claude Code* inside the container with its working directory set to
+your repository. The first run builds the image (provisions IDEasy + Claude
+Code, a few minutes); subsequent runs are fast.
+
+== Options
+
+The launcher supports these options (see `bash docker-sandbox/docker-sandbox.sh --help`):
+
+[cols="30%,70%",options="header",grid="cols"]
+|===
+|Option |Description
+|`--repo <path>` |Git repository to mount (default: auto-detected from the current
+directory).
+|`--image <name>` |Image name (default: `ideasy-sandbox`).
+|`--agent <name>` |Agent commandlet to run (default: `claude`).
+|`--pull` |Rebuild the image before running.
+|`--check` |Validate the host and exit (no build, no run).
+|`--dry-run` |Print the exact `docker run` command and exit (no run).
+|`--ca-cert <file>` |CA bundle to trust inside the container
+(`NODE_EXTRA_CA_CERTS`).
+|`--api-key <value>` |Anthropic/Claude API key so the agent can authenticate (also
+read from the host `IDEASY_SANDBOX_API_KEY` env var).
+|`--env NAME=VALUE` |Extra environment variable for the agent (repeatable), e.g. a custom
+`ANTHROPIC_BASE_URL` / `ANTHROPIC_AUTH_TOKEN` for a proxy.
+|`--` |Forward everything after `--` to the agent.
+|===
