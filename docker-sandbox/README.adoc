@@ -1,0 +1,153 @@
+= Docker Sandbox (docker-sbx) for AI Coding Agents
+
+[WARNING]
+====
+*This solution is experimental and targets technically skilled users only.
+Use at your own risk. No warranty or support is implied.*
+====
+
+Run an AI coding agent (default: *Claude Code*) inside an isolated **MicroVM
+sandbox** provided by https://www.docker.com/products/docker-sandboxes/[Docker
+Sandboxes], using the `sbx` CLI. This is the **local, `sbx`-based** flavour of
+the IDEasy Docker Sandbox solution - the agent works on your real git repository
+while the sandbox runtime stays fully isolated and never touches your host IDEasy
+installation.
+
+The full, product-level documentation lives with Docker:
+https://docs.docker.com/ai/sandboxes/[Docker Sandboxes documentation].
+For the sbx CLI reference see https://docs.docker.com/reference/cli/sbx/[here].
+
+== How it differs from the custom-image solution
+
+There are two flavours of the IDEasy Docker Sandbox solution:
+
+[cols="30%,70%",options="header",grid="cols"]
+|===
+|Flavour |What it does
+|link:https://github.com/devonfw/ide-settings/tree/feature/2573-AI-Sandbox-using-Docker-Sandboxes/docker-sandbox[custom image]
+|Builds its own `Dockerfile` with a provisioned IDEasy workspace baked in, and
+runs `docker run` on it. You control the base image and the exact toolchain.
+|**docker-sbx (this folder)**
+|Uses the `sbx` CLI and its built-in agent images. Nothing to build; the agent
+runs in a `sbx` MicroVM sandbox. Simpler and keeps up with Docker's agent
+images, but you do not customise the image.
+|===
+
+== Contents
+
+|===
+|File |Purpose
+|`docker-sandbox.sh` |Host launcher: validates the prerequisites and runs `sbx run`,
+binding your git repository as the sandbox workspace.
+|===
+
+== Prerequisites (one-time)
+
+Docker Sandboxes run *locally* and are free, including for commercial work. You
+need:
+
+. A Docker engine with hypervisor support for MicroVM isolation
+  (Docker Desktop / Rancher Desktop on Windows & macOS, KVM on Linux).
+. The `sbx` CLI installed:
++
+[source,bash]
+----
+winget install Docker.sbx                              # Windows
+brew install docker/tap/sbx                            # macOS
+curl -fsSL https://get.docker.com | sudo SBX=1 sh      # Linux
+----
+. Sign in to Docker:
++
+[source,bash]
+----
+sbx login
+----
+. Initialize the local network policy (once):
++
+[source,bash]
+----
+sbx policy init balanced
+----
+
+The launcher checks all of the above and prints exactly what is missing.
+
+== Quick start
+
+Run the launcher from inside the repository you want to work on:
+
+[source,bash]
+----
+bash docker-sandbox/docker-sandbox.sh
+----
+
+or via the IDEasy commandlet, which forwards all arguments to the launcher:
+
+[source,bash]
+----
+ide docker-sandbox
+----
+
+This starts *Claude Code* inside a `sbx` MicroVM sandbox with the current git
+repository bind-mounted as its workspace. Re-running the command re-attaches to
+the existing sandbox for the same agent/workspace (use `--pull` for a fresh one).
+
+The agent authenticates with your environment's API key by default; you can also
+point `--env` at a proxy or pass a key with `--api-key` / the
+`IDEASY_SANDBOX_API_KEY` environment variable.
+
+== Options
+
+The launcher supports these options (see also `bash docker-sandbox/docker-sandbox.sh --help`):
+
+[cols="30%,70%",options="header",grid="cols"]
+|===
+|Option |Description
+|`--repo <path>` |Git repository to mount as the workspace (default: the current
+repository / directory).
+|`--image <ref>` |OCI image reference for the sandbox (default: the sbx
+agent-specific image).
+|`--agent <name>` |Agent to run (default: `claude`). sbx built-in agents:
+`claude`, `codex`, `copilot`, `cursor`, `devin`, `docker-agent`, `droid`, `kiro`,
+`opencode`, `shell`.
+|`--pull` |Start a fresh, disposable sandbox and pull the latest image instead of
+re-attaching to an existing one.
+|`--check` |Validate the host (sbx CLI, daemon, login, policy, workspace) and
+exit - do not start anything.
+|`--dry-run` |Validate and print the exact `sbx run` command, then exit.
+|`--ca-cert <file>` |CA bundle to trust inside the sandbox (e.g. a corporate proxy
+CA); mounted read-only and exported as `NODE_EXTRA_CA_CERTS` / `SSL_CERT_FILE`.
+Always starts a *fresh* sandbox: a workspace mount can only be attached at
+sandbox creation, so `--ca-cert` cannot re-attach to an existing sandbox.
+|`--api-key <value>` |API key for the agent (default: Anthropic), passed as
+`ANTHROPIC_API_KEY` (also read from the host `IDEASY_SANDBOX_API_KEY`).
+|`--env NAME=VALUE` |Extra environment variable for the agent (repeatable), e.g.
+`--env ANTHROPIC_BASE_URL=https://proxy`.
+|`--` |Forward everything after `--` to the agent.
+|===
+
+== Managing sandboxes
+
+Sandbox lifecycle is handled by `sbx` directly:
+
+[source,bash]
+----
+sbx ls                    # list sandboxes
+sbx exec -it <name> bash  # attach a shell to a running sandbox
+sbx stop <name>           # stop without removing
+sbx rm <name>             # remove
+sbx prune                 # remove all stopped sandboxes
+----
+
+== Git & pull requests from inside the sandbox
+
+Only the workspace is mounted; host SSH keys and SSH agents are **not** exposed.
+If the agent needs to push or open pull requests, store a token that sbx can use
+from the host (never baked into the sandbox):
+
+[source,bash]
+----
+sbx secret set github --command "gh auth token"
+----
+
+For details on credential handling, network policies and the security model see
+the https://docs.docker.com/ai/sandboxes/[Docker Sandboxes documentation].

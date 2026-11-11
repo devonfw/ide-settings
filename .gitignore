@@ -9,3 +9,6 @@
 *.tar.gz
 *.rar
 *.bak
+
+# docker-sandbox: local corporate CA bundle used to trust the internal Anthropic proxy (never share)
+docker-sandbox/*.pem
