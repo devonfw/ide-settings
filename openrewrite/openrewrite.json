@@ -1,0 +1,18 @@
+[
+  {
+    "id": "java.format_code",
+    "description": "Format Java code.",
+    "url": "https://docs.openrewrite.org/recipes/java/format/autoformat",
+    "properties": {
+      "rewrite.activeRecipes": "org.openrewrite.java.format.AutoFormat"
+    }
+  },
+  {
+    "id": "java.blank_lines",
+    "description": "Add and/or remove blank lines.",
+    "url": "https://docs.openrewrite.org/recipes/java/format/blanklines",
+    "properties": {
+      "rewrite.activeRecipes": "org.openrewrite.java.format.BlankLines"
+    }
+  }
+]
