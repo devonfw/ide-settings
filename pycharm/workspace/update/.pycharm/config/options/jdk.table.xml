@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application xmlns:merge="https://github.com/devonfw/IDEasy/merge" merge:strategy="combine">
+  <component name="ProjectJdkTable">
+    <jdk version="2" merge:id="./jdk/name[@value='Python']/.." merge:strategy="override">
+      <name value="Python"/>
+      <type value="Python SDK"/>
+      <homePath value="$[IDE_HOME]/software/python/@if-windows('Scripts/python.exe')@if-unix('bin/python')"/>
+    </jdk>
+  </component>
+</application>
